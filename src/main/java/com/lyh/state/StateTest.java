@@ -9,6 +9,7 @@ public class StateTest {
 
     public static void main(String[] args) {
         GameContext context = new GameContext();
+        //当前状态初始化为静止状态
         context.setCurrentState(context.staticState);
 
         context.move();

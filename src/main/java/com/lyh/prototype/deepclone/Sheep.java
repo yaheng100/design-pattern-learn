@@ -7,6 +7,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutput;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
+import java.util.Map;
 
 /**
  * @description: 深克隆原型类
@@ -94,6 +95,7 @@ public class Sheep implements Cloneable, Serializable {
 
 
     //序列化实现方法 可以通过IO流或者JSON等方式
+    //需要注意的是 如果包含对象引用 所有引用的对象也需要可以序列化
     public Sheep clone1() throws Exception {
 
         ByteArrayOutputStream byteArrayOutputStream;
